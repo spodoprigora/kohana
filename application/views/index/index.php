@@ -1,6 +1,6 @@
 <h3>Главная страница</h3>
 <br/>
-
+<?php if($articles):?>
 <?php foreach($articles as $article): ?>
 
     <div class="item">
@@ -14,3 +14,4 @@
     </div>
 <?php endforeach; ?>
 <?php echo $pagination; ?>
+<?php endif;?>
